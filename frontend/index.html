@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Page Pulse — Website Auditing Tool</title>
+    <meta name="description" content="Page Pulse is a modern website auditing tool. Instantly analyze any webpage for SEO metrics, accessibility insights, and performance data." />
+    <meta name="keywords" content="website audit, SEO analyzer, page speed, accessibility checker, web performance, Page Pulse" />
+    <meta name="author" content="Page Pulse" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Page Pulse — Website Auditing Tool" />
+    <meta property="og:description" content="Instantly analyze any webpage for SEO metrics, accessibility insights, and performance data." />
+    <meta property="og:site_name" content="Page Pulse" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Page Pulse — Website Auditing Tool" />
+    <meta name="twitter:description" content="Instantly analyze any webpage for SEO metrics, accessibility insights, and performance data." />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+    <!-- Prevent FOUC for dark mode -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('pp-theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased min-h-screen transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
