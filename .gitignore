@@ -109,3 +109,7 @@ Thumbs.db
 dist/
 dist-ssr/
 *.local
+
+# Submission deliverables to ignore
+LOOM_SCRIPT.md
+SELF_REVIEW.md
